@@ -9,12 +9,12 @@ const lenis = new Lenis({
   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
 })
 
-function raf (time) {
-  lenis.raf(time)
-  window.requestAnimationFrame(raf)
-}
-
-window.requestAnimationFrame(raf)
+window.requestAnimationFrame(
+  function raf (time) {
+    lenis.raf(time)
+    window.requestAnimationFrame(raf)
+  }
+)
 
 gsap.timeline({
   scrollTrigger: {
