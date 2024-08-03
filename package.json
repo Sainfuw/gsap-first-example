@@ -1,16 +1,13 @@
 {
-  "name": "ex1",
+  "name": "example01",
   "version": "1.0.0",
+  "type": "module",
   "eslintConfig": {
     "extends": "standard"
   },
-  "type": "module",
-  "description": "",
   "scripts": {
-    "start": "parcel index.html --open"
+    "dev": "parcel index.html --open"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "gsap": "^3.12.5",
