@@ -10,8 +10,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "gsap": "^3.12.5",
-    "lenis": "^1.1.9"
+    "gsap": "^3.12.5"
   },
   "devDependencies": {
     "parcel": "^2.12.0",
